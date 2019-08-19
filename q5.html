@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+        Enter a string:<input type="text" name="no1" id="no1"><br>
+        <button id="check" onclick="convert()">SUBMIT</button>
+
+        <script>
+            function convert(){
+                z=document.getElementById("no1").value;
+                k=z.split(" ");
+                l=[];
+                big=k[0].length;
+                // for(i=0;i<k.length;i++){
+                    
+                // }
+                // document.write("*");
+                i=0;
+                while(k[i].length!=0){
+                    if(k[i].length>big){
+                        big=k[i].length;
+                        pos=i;
+                        i=i+1;
+                        document.write(k[pos]);
+
+                    }
+                    else{
+                        i=i+1;
+                    }
+                }
+                // for(i=0;i<k.length;i++){
+                //     l[i]=k[i].length;
+                // }
+                // i=0;
+                // while(k[i].length!=0){
+                //     if(k[i].length>big){
+                //         big=k[i].length;
+                //         pos=i;
+                //         i=i+1;
+                        
+                //     }
+                //     document.write(k[pos]);
+                   
+                }
+                
+                
+              
+
+           
+        </script>
+</body>
+</html>

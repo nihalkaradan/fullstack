@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+        Enter a string:<input type="text" name="no1" id="no1"><br>
+        <button id="check" onclick="convert()">SUBMIT</button>
+    <script>
+        function convert(){
+            z=document.getElementById("no1").value;
+            k=z.split("");
+            for(i=0;i<k.length;i++){
+                if(i==0){
+                    k[i]=k[i].toUpperCase();
+                }
+                if(k[i]==" "){
+                    
+                    k[i+1]=k[i+1].toUpperCase();
+                }
+                document.write(k[i]);
+            }
+        }
+    </script>
+</body>
+</html>

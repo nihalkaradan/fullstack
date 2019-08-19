@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+        Enter a string:<input type="text" name="no1" id="no1"><br>
+        <button id="check" onclick="convert()">SUBMIT</button>
+
+        <script>
+            function convert(){
+                str=document.getElementById("no1").value;
+                k=str.split("");
+               k= k.sort();
+                k=k.join("");
+
+               alert(k);
+                
+            }
+        </script>
+
+</body>
+</html>

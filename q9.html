@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+   <script>
+        a=[1,2,3];
+        b=[12,2,3,9];
+        a=a.concat(b);
+
+        c=[];
+
+        y={}
+        for(i=0;i<a.length;i++){
+            if(a[i] in y){
+                    y[a[i]]+=1;
+                   // console.log(y);
+                }
+                else{
+                    y[a[i]]=1;
+                    //console.log(y);
+                }
+        }
+        for(var index in y) {
+                if(y[index]==1){
+                    
+                    c.push(index);
+                }
+            }
+    //     var c= new Set();
+    //     a.forEach(element => {
+    //         c.add(element);
+            
+    //     });
+    //    b.forEach(element => {
+    //        c.add(element);
+           
+    //    });
+        // a.forEach(item => c.add(item));
+        // b.forEach(item => c.add(item));
+        console.log(c);
+    </script>
+</body>
+</html>

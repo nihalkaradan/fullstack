@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+         var dt = new Date();
+      //  console.log(dt.getDay());    
+        dayy={
+            1:"Monday",
+            2:"Tuesday",
+            3:"Wednesday",
+            4:"Thursday",
+            5:"Friday",
+            6:"Saturday",
+            7:"Sunday"
+        }
+        var ampm = "am";
+        hr=dt.getHours();
+        if( hr > 12 ) {
+            hr -= 12;
+            ampm = "pm";
+        }
+        console.log("Today : "+dayy[dt.getDay()]);
+        console.log("Time is :"+dt.getHours()+":"+dt.getMinutes()+":" + dt.getSeconds() + ampm);
+    </script>
+</body>
+</html>
